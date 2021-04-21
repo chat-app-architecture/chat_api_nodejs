@@ -13,9 +13,9 @@ var options = {
   'force new connection': true
 };
 
-var message1 = 'first';
-var message2 = 'hello';
-var message3 = 'hi';
+var message1 = 'this is a';
+var message2 = 'chat';
+var message3 = 'app for Stonks';
 
 describe('Chat Server',function(){
   it('should broadcast new message to all users', function(done){
@@ -25,8 +25,6 @@ describe('Chat Server',function(){
     client1.on('connect', function(data){
       client1.emit('message', message1);
 
-      // Since first client is connected, we connect
-      // the second client.
       var client2 = io.connect(socketURL, options);
 
       client2.on('connect', function(data){
