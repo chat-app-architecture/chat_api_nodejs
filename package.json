@@ -1,0 +1,23 @@
+{
+  "name": "socket-io-server",
+  "version": "0.0.1",
+  "description": "Stonks Chat app with socket.io",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha -R spec",
+    "start": "node chat-server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "redis": "^2.7.1",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.0",
+    "mocha": "^3.4.2",
+    "redis-js": "^0.1.2",
+    "should": "^11.2.1"
+  }
+}
