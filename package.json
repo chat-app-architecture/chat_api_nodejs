@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "cross-env": "^5.0.0",
-    "mocha": "^3.4.2",
+    "mocha": "^10.2.0",
     "redis-js": "^0.1.2",
     "should": "^11.2.1"
   }
